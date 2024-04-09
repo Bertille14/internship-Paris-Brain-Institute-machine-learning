@@ -43,20 +43,7 @@ sim = np.zeros((len(sentences), len(sentence)))
 for i in range(len(sentence)):
     sim[i:,i] = cos_sim(embeddings[i], embeddings[i:])
 
-sim
 
-
-
-#sur le code test aut auto : ça après 'obtention des matrices
-# Pour recharger les phrases et les matrices de similarité
-# cue_to_retrieve = input("la cue à récupérer")
-# Recharger les phrases
-# sentences = np.load(f"sentences_{cue_to_retrieve}.npy", allow_pickle=True)
-#
-# Recharger la matrice de similarité
-# similarity_matrix = np.load(f"similarity_matrix_{cue_to_retrieve}.npy")
-#
-# print(f"Sentences for cue '{cue_to_retrieve}':")
 # print(sentences)
 # print(f"Similarity matrix for cue '{cue_to_retrieve}':")
 # print(similarity_matrix)
